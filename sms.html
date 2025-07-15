@@ -1,0 +1,25 @@
+<!-- sms.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SMS Bombing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📱 SMS Bombing</h1>
+
+  <form action="/api/sms_bomber" method="POST">
+    <label>Target Number:</label><br>
+    <input type="text" name="target_number" required><br><br>
+
+    <label>How Many SMS:</label><br>
+    <input type="number" name="quantity" min="1" max="1000" required><br><br>
+
+    <button type="submit">🚀 Start Bombing</button>
+  </form>
+
+  <footer>
+    Powered by Team CSB | Abu Talha
+  </footer>
+</body>
+</html>
