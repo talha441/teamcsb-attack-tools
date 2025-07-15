@@ -1,20 +1,40 @@
-<!-- email.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Email Bombing</title>
+  <meta charset="UTF-8" />
+  <title>📧 Email Bombing | Team CSB</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+    }
+    form {
+      margin-top: 30px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 5px;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 12px;
+      color: #aaa;
+    }
+  </style>
 </head>
-  <a href="email.html" class="btn">📧 Email Bombing</a>
 <body>
   <h1>📧 Email Bombing</h1>
 
   <form>
     <label>🎯 Target Email:</label><br>
-    <input type="email" name="target_email" required><br><br>
+    <input type="email" name="target_email" placeholder="example@gmail.com" required><br><br>
 
     <label>🔢 How Many Emails:</label><br>
-    <input type="number" name="quantity" min="1" max="1000" required><br><br>
+    <input type="number" name="quantity" min="1" max="1000" value="100" required><br><br>
 
     <button type="submit">🚀 Start Bombing</button>
   </form>
